@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-color: rgb(240, 241, 241);
+    padding-top: 1px;
+    /* I did padding-top as 1px to show that I made navbar sticky.*/
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --NavbarFontColor: rgb(60, 86, 232);
+    --NavFontFamily: "Luckiest Guy", cursive;
+    --NavFontStyle: normal;
+    --BoxShadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+    --UpperFontFamily: "Montserrat", sans-serif;
+    --UpperFontOpticalSizing: auto;
+    --UpperFontWeight: 420;
+    --UpperFontStyle: normal;
+    --NormalTextColor: rgb(101, 121, 233);
+    --UnderlineTextDecoration: underline;
+}
+
+header{
+    position: sticky;
+    top: 0px;
+}
+
+
+.navbar {
+    background-color: rgb(205, 237, 250);
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .image img {
+    height: 70px;
+    width: 70px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: inline-flex;
+}
+
+.navbar ul li a {
+    display: inline-block;
+    margin-left: 50px;
+    text-decoration: none;
+    color: var(--NavbarFontColor);
+    font-family: var(--NavFontFamily);
+    font-weight: 80;
+    font-style: var(--NavFontStyle);
+
+}
+
+.navbar ul li a:hover {
+    transform: scale(1.1);
+    text-decoration: var(--UnderlineTextDecoration);
+}
+
+.searchbar {
+    border: 2px solid var(--NavbarFontColor);
+    border-radius: 24px;
+    width: 278px;
+    height: 27px;
+    padding: 0px 17px;
+    padding-top: 3px;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.searchbar:hover {
+    box-shadow: var(--BoxShadow);
+}
+
+.MagnifyingGlass img {
+    margin-top: 2px;
+    color: var(--NavbarFontColor);
+}
+
+.searchbar input {
+
+    background: transparent;
+    width: 237px;
+    border: none;
+    outline: none;
+    color: var(--NavbarFontColor);
+    margin-left: 14px;
+    font-size: 12px;
+}
+
+.searchbar input::placeholder {
+    color: var(--NavbarFontColor);
+    font-family: var(--NavFontFamily);
+    font-weight: 20;
+    font-size: 11px;
+    font-style: var(--NavFontStyle);
+}
+
+.InstallOurApp {
+    margin-left: 50px;
+    display: flex;
+}
+
+.Install {
+    color: var(--NavbarFontColor);
+    font-family: var(--NavFontFamily);
+    font-weight: 100;
+    font-style: var(--NavFontStyle);
+    text-decoration: none;
+}
+
+.InstallDownload {
+    font-size: 28px;
+}
+
+.InstallText {
+    margin-top: 11px;
+}
+
+.InstallOurApp:hover {
+    transform: scale(1.1);
+    text-decoration: var(--UnderlineTextDecoration);
+    text-decoration-color: var(--NavbarFontColor);
+}
+
+.Bell img {
+    transform: scale(1.2);
+    font-weight: 500;
+    margin-top: 11px;
+    margin-left: 50px;
+}
+
+.Bell img:hover {
+    transform: scale(1.5);
+}
+
+.AccountPicture img {
+    height: 42px;
+    width: 42px;
+    border-radius: 27px;
+    margin-top: 9px;
+    margin-left: 70px;
+}
+
+.UpperBody {
+    background-color: rgb(231, 239, 239);
+    display: flex;
+    margin: 4px 4px 4px 4px;
+    padding: 20px 75px 20px 75px;
+    height: 500px;
+}
+
+.LeftSpan {
+    background-image: url(WashedCutlery.jpg);
+    width: 375px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: var(--BoxShadow);
+}
+
+.RightSpan {
+    width: 575px;
+    height: 500px;
+    margin-top: 40px;
+    margin-left: 119px;
+    color: var(--NormalTextColor);
+    font-family: var(--UpperFontFamily);
+    font-optical-sizing: var(--UpperFontOpticalSizing);
+    font-weight: var(--UpperFontWeight);
+    font-style: var(--UpperFontStyle);
+}
+
+.RightSpan p {
+    font-size: 16px;
+}
+
+.LowerBody {
+    background-color: rgb(231, 239, 239);
+    margin: 4px 4px 4px 4px;
+    height: 130px;
+}
+
+.LowerBodyHeading {
+    margin: 4px 0px 4px 4px;
+    font-family: var(--NavFontFamily);
+    font-weight: 80;
+    font-style: var(--NavFontStyle);
+color: var(--NavbarFontColor);
+}
+
+.Buttons {
+    height: 80px;
+    width: 650px;
+    margin-left: 150px;
+}
+
+.Button {
+    height: 35px;
+    width: 180px;
+    margin: 20px 10px 0px 20px;
+    border-radius: 20px;
+    border-color: transparent;
+    background-color: rgb(205, 237, 250);
+    color: var(--NormalTextColor);
+    font-family: var(--UpperFontFamily);
+    font-optical-sizing: var(--UpperFontOpticalSizing);
+    font-weight: 600;
+    font-style: var(--UpperFontStyle);
+}
+
+.Button:hover{
+    box-shadow: var(--BoxShadow);
+    font-size: 15px;
+    transform: scale(1.07);
+    background-color: var(--NavbarFontColor);
+    color: white;
+
+}
+.Footer {
+    background-color: rgb(231, 239, 239);
+    margin: 4px 4px 4px 4px;
+    padding: 8px 4px 0px 8px;
+    height: 50px;
+    color: var(--NormalTextColor);
+    font-family: var(--UpperFontFamily);
+    font-optical-sizing: var(--UpperFontOpticalSizing);
+    font-weight: 600;
+    font-style: var(--UpperFontStyle);
+}
+
+.StickyLogo {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 3;
+    height: 60px;
+    width: 60px;
+}
